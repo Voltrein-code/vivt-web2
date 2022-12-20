@@ -1,17 +1,85 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лабораторные работы ВЕБ 3-8</title>
-</head>
-<body class="root">
-  <div class="page">
-    <header class="header"></header>
-    <main></main>
-    <footer class="footer"></footer>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторные работы ВЕБ 3-8</title>
+    <link rel="stylesheet" href="../src/pages/index.css" />
+  </head>
+
+  <body class="root">
+    <div class="page">
+      <header class="header">
+        <p class="header__explanation">Выберите лабораторную работу</p>
+        <nav>
+          <ul class="header__links">
+            <li>
+              <button class="header__menu-btn">Lab 3</button>
+            </li>
+            <li>
+              <button class="header__menu-btn">Lab 4</button>
+            </li>
+            <li>
+              <button class="header__menu-btn">Lab 5</button>
+            </li>
+            <li>
+              <button class="header__menu-btn">Lab 6</button>
+            </li>
+            <li>
+              <button class="header__menu-btn">Lab 7</button>
+            </li>
+            <li>
+              <button class="header__menu-btn">Lab 8</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <iframe class="iframe" src="" frameborder="0"></iframe>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+
+    <div class="popup popup_type_circle">
+      <form action="#" class="popup__container" name="circle" novalidate>
+        <button class="popup__close popup__close_type_circle"></button>
+        <h2 class="popup__title">Круг</h2>
+        <input
+          class="popup__input popup__input_type_x"
+          type="text"
+          placeholder="Введите x"
+          minlength="1"
+          maxlength="6"
+          name="x"
+          id="x-input"
+          required
+        />
+        <span class="popup__input-error x-input-error"></span>
+        <input
+          class="popup__input popup__input_type_y"
+          type="text"
+          placeholder="Введите y"
+          minlength="1"
+          maxlength="6"
+          name="y"
+          id="y-input"
+          required
+        />
+        <span class="popup__input-error y-input-error"></span>
+        <input
+          class="popup__input popup__input_type_d"
+          type="text"
+          placeholder="Введите d"
+          minlength="1"
+          maxlength="6"
+          name="d"
+          id="d-input"
+          required
+        />
+        <span class="popup__input-error d-input-error"></span>
+        <button class="popup__submit" type="submit">Посчитать площадь</button>
+      </form>
+    </div>
+  </body>
 </html>

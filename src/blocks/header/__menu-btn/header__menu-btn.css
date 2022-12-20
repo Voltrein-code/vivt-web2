@@ -1,0 +1,12 @@
+.header__menu-btn {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  outline: none;
+  color: black;
+  border: 1px solid black;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
